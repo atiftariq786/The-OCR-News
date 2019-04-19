@@ -11,14 +11,16 @@ var axios = require("axios");
 var cheerio = require("cheerio");
 
 // Port Configuration 
-var PORT       = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3000;
 // Mongodb connection
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoscraper";
+
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI, {
   useMongoClient: true
 });
+
 
 // Require all models
 var db = require("./models");
@@ -36,9 +38,32 @@ app.use(express.json());
 // Make public a static folder
 app.use(express.static("public"));
 
+//======Routes =============================================
+app.get("/", function(req, res) {
+  db.Article
+  .find({saved: false})
+  .then(function(dbArticle) {
+    res.render('index', { articles: dbArticle } );
+  })
+  .catch(function(err) {
+    // If an error occurred, send it to the client
+    res.json(err);
+  });
+});
 
-
-
+// Retrieve data from the db
+app.get("/all", function(req, res) {
+  db.Article
+  .find({})
+  .then(function(dbArticle) {
+    // If we were able to successfully find Articles, send them back to the client
+    res.json(dbArticle);
+  })
+  .catch(function(err) {
+    // If an error occurred, send it to the client
+    res.json(err);
+  });
+});
 
 
 
