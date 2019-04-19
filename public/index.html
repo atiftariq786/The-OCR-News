@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mongo Scraper</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/materia/bootstrap.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="/">Mongo Scraper</a>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/saved">Saved Articles
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-danger clear">CLEAR ARTICLES!</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron text-center">
+  <div class="overlay">
+  </div>
+  <div class="background-image">
+  </div>
+  <div class="caption">
+    <h1>Saved Articles</h1>
+    <p>Your Saved Articles</p>
+  </div>
+</div>
+<div class="container-fluid article-container">
+    <div data-_id=5cb7f42af320da001525e01a class="card">
+      <div class="card-header">
+        <h3>
+          <a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/04/17/style/conan-obrien-robert-caro-interview.html">A Fan’s Love, Requited at Last: Conan O’Brien Lands Robert Caro</a>
+          <a class="btn btn-danger delete">Delete From Saved</a>
+          <a class="btn btn-info notes">Article Notes</a>
+        </h3>
+      </div>
+      <div class="card-body">The talk show host’s interview of the acclaimed biographer is a long-awaited win for Team Coco.</div>
+    </div>
+    <div data-_id=5cb7f42af320da001525e019 class="card">
+      <div class="card-header">
+        <h3>
+          <a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/04/17/style/deciem-brandon-truaxe-ordinary.html">He Built, Then Nearly Broke, a Successful Beauty Start-Up. Can It Go on Without Him?</a>
+          <a class="btn btn-danger delete">Delete From Saved</a>
+          <a class="btn btn-info notes">Article Notes</a>
+        </h3>
+      </div>
+      <div class="card-body">Brandon Truaxe, the creator of Deciem, died in January after a tumultuous 2018. The company is still recovering.</div>
+    </div>
+    <div data-_id=5cb7f42af320da001525e017 class="card">
+      <div class="card-header">
+        <h3>
+          <a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/04/17/world/europe/statues-notre-dame-relics.html">The Chaplain, the Fire and the Race to Rescue Notre-Dame’s Relics</a>
+          <a class="btn btn-danger delete">Delete From Saved</a>
+          <a class="btn btn-info notes">Article Notes</a>
+        </h3>
+      </div>
+      <div class="card-body">A Paris Fire Department chaplain was among those who rushed into a burning Notre-Dame to save artifacts.</div>
+    </div>
+    <div data-_id=5cb7f42af320da001525e018 class="card">
+      <div class="card-header">
+        <h3>
+          <a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/04/17/opinion/pete-buttigieg-black-vote.html">The Complexities of the Black Vote</a>
+          <a class="btn btn-danger delete">Delete From Saved</a>
+          <a class="btn btn-info notes">Article Notes</a>
+        </h3>
+      </div>
+      <div class="card-body">Alas, Pete Buttigieg isn’t Obama. No one is.</div>
+    </div>
+    <div data-_id=5cb7f42af320da001525e016 class="card">
+      <div class="card-header">
+        <h3>
+          <a class="article-link" target="_blank" rel="noopener noreferrer" href="https://www.nytimes.com/2019/04/17/world/europe/yellow-vest-notre-dame-fire-donations.html">France’s Wealthy Are Throwing Cash at Notre-Dame Amid a Fight Over InequalityThe president of France called for national unity after the fire. It may be a hard sell.The Chaplain, the Fire and the Race to Rescue Notre-Dame’s Relics</a>
+          <a class="btn btn-danger delete">Delete From Saved</a>
+          <a class="btn btn-info notes">Article Notes</a>
+        </h3>
+      </div>
+      <div class="card-body">A Paris Fire Department chaplain was among those who rushed into a burning Notre-Dame to save artifacts.</div>
+    </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p>New York Times Mongo Scraper</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+<script src="/assets/javascript/saved.js"></script>
+
+</body>
+
+</html>
