@@ -10,7 +10,18 @@ body {
   max-height: 70%;
 }
 
+.card{
+  background-color: black;
+  color: white;
+}
 
+.modal, .bottom-sheet, .open{
+  background-color: rgb(53, 51, 51) !important;
+}
+
+.collection,.collection-item{
+background-color: rgb(53, 51, 51) !important;
+}
 #toast-container {
   top: 10% !important;
   right: auto !important;
