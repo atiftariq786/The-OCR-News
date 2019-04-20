@@ -22,9 +22,17 @@ The OCR News is a Node.js App using mongoDB. The App uses cheerio to scrapes art
 
 ##  App Images
 
-**  Default View
+**  Home View
 
 ![alt text]( "App default view")
+
+**  Saved articles
+
+![alt text]( "App saved articles")
+
+**  Add Notes
+
+![alt text]( "Add notes")
 
 ##  App Deployment Instructions
     This app has been deployed to Heroku, and the link can be found [here]().If you would like to run the app locally, follow these instructions: 
