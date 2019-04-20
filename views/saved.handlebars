@@ -1,0 +1,76 @@
+<div id="articles" class="articles-container">
+{{#if articles}}
+  
+  <div class="article-grid row">
+    <div class="article-sizer col s12 m6 xl3"></div><!-- /.article-sizer -->
+    {{#each articles}}
+      <div class="article-item col s12 m6 xl3" data-id="{{this._id}}">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title"><a href="{{this.link}}" class="blue-text">{{this.title}}</a></span>
+            <a href="{{this.link}}" class="black-text" target="_blank"><i class="material-icons tiny">call_made</i> View Article</a> 
+          </div><!--/.card-content -->
+          <div class="card-action">
+            <a href="#" class="orange-text btn-unsave"><i class="material-icons tiny">close</i> UnSave Article</a> 
+            <a href="#modal" class="orange-text modal-trigger add-comment"><i class="material-icons tiny">comment</i> Add Comment</a>             
+          </div><!--/.card-action -->
+        </div><!--/.card -->
+      </div><!--/.article-item -->
+    {{/each}}
+  </div><!--/.row -->
+
+{{else}}
+
+  <div class="row">
+    <div class="col s12">
+      <div class="card-panel text-center">
+        <span>There are no Saved Articles</span>
+      </div><!--/.card -->
+    </div><!--/.article-item -->
+  </div><!-- /.row -->
+
+{{/if}}
+</div><!-- /.articles-container -->
+
+<div id="modal" class="modal bottom-sheet">
+  <div class="modal-content">
+    <div class="row">
+
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title"><i class="material-icons">comment</i> Comments</span>
+            <div class="row">
+              <div class="col s12">
+                <ul id="comments" class="collection">
+                </ul>
+              </div><!--/.comments -->
+            </div><!-- /.row -->
+          </div><!-- /.card-content -->
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-content">
+            <span class="comment-article-title card-title blue-text"></span>
+            <span class="card-title"><i class="material-icons">comment</i> Add a Comment</span>
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="comment" class="materialize-textarea"></textarea>
+                    <label for="comment">Comment</label>
+                  </div><!-- /.col -->
+                </div><!-- /.row -->
+                 <a id="save-comment" class="waves-effect waves-light btn orange" data-article=""><i class="material-icons tiny left">save</i> Save Comment</a>
+              </form><!-- /.col -->
+            </div><!-- /.row -->
+          </div><!-- /.card-content -->
+        </div><!-- /.card -->
+      </div><!-- /.col -->
+
+    </div><!-- /.row -->
+  </div><!-- /.modal-content -->  
+</div><!-- /.modal -->  

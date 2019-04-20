@@ -4,23 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mongo Scraper</title>
-  
+  <title>The OCR News</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.min.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
+  <link href="/css/materialize.min.css" rel="stylesheet">
+  <link href="/css/styles.css" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>   
-  <script src="js/materialize.min.js"></script>
-  <script src="js/app.js"></script>
-  
+  <script src="/js/materialize.min.js"></script>
+  <script src="/js/masonry.pkgd.min.js"></script>
+  <script src="/js/app.js"></script>
 </head>
 <body>
   
   <div class="navbar-fixed">
-    <nav class="site-navbar black darken-4">
+    <nav class="site-navbar blue darken-4">
       <div class="nav-wrapper">
-        <a href="/" class="brand-logo"><i class="material-icons left">library_books</i> Mongo Scraper</a>
+        <a href="/" class="brand-logo"><i class="material-icons left">library_books</i> The OCR News</a>
         <ul class="right">
           <li><a href="/"><i class="material-icons left tiny">home</i> Home</a></li>
           <li><a href="/saved"><i class="material-icons left tiny">save</i> Saved Articles</a></li>
@@ -29,7 +28,39 @@
       </div><!--/.nav-wrapper -->
     </nav><!--/.site-navbar -->
   </div><!-- /.navbar-fixed -->
-<h1 class="test">Atif</h1>
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>The OCR News!</h3>
+          <h5 class="light grey-text text-lighten-3">The'Orange County Register'news is a paid daily newspaper published in California. </h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>The OCR News!</h3>
+          <h5 class="light grey-text text-lighten-3">The Register, published in Anaheim, is owned by Digital First Media. Freedom Communications owned the newspaper from 1935 to 2016.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>The OCR History!</h3>
+          <h5 class="light grey-text text-lighten-3">The Register was founded by a consortium as the Santa Ana Daily Register in 1905</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption center-align">
+          <h5 class="light grey-text text-lighten-3">2190 S. Towne Centre Place
+Anaheim, California 92806</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+      
   {{{ body }}}
 </body>
 </html>

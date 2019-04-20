@@ -1,0 +1,49 @@
+body {
+  background-color: black;
+}
+
+.blue.darken-4 {
+  background-color: rgb(22, 20, 20) !important;
+}
+.modal.bottom-sheet{
+
+  max-height: 70%;
+}
+
+
+#toast-container {
+  top: 10% !important;
+  right: auto !important;
+  left: 50%;  
+  margin-left: -160px;
+}
+.nav-wrapper {
+  text-transform: uppercase;
+}
+nav .brand-logo {
+  left: 15px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+    left: 15px;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* @media only screen and (max-width: 940px) {
+  nav ul.right {
+    margin-top: 75px;
+    float: none !important;
+  }
+} */
+
+.articles-container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.text-center {
+  text-align: center;
+}
